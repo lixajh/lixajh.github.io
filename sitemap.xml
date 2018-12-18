@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/post/hello-world/</loc>
+    <loc>https://lixajh.github.io/post/hello-world/</loc>
     <lastmod>2018-12-17T23:44:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://lixajh.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2018-12-17T23:44:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://lixajh.github.io/</loc>
     <lastmod>2018-12-17T23:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/taga/</loc>
+    <loc>https://lixajh.github.io/post/</loc>
     <lastmod>2018-12-17T23:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/tagb/</loc>
+    <loc>https://lixajh.github.io/tags/taga/</loc>
     <lastmod>2018-12-17T23:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://lixajh.github.io/tags/tagb/</loc>
+    <lastmod>2018-12-17T23:44:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lixajh.github.io/tags/</loc>
     <lastmod>2018-12-17T23:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
