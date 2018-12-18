@@ -1,5 +1,5 @@
 baseURL = "https://lixajh.github.io/"
-languageCode = "en"
+languageCode = "zh"
 title = "Lix's Blog"
 theme = "hugo-nuo"
 enableRobotsTXT = true
@@ -7,7 +7,7 @@ PygmentsCodeFences = true
 canonifyurls = true
 
 # Disqus Username
-disqusShortname = "disqus_shortname"
+# disqusShortname = "disqus_shortname"
 
 # Google Analytics UA number
 googleAnalytics = "UA-XXXXXXXX-X"
@@ -78,7 +78,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   # reddit = "melaozhu"
 
   # Changyan Comments (China Only)
-  changyan = false
+  changyan = true
   changyanId = "cyt3toRiB"
   changyanConf = "prod_0908b1cb9a581501753cce1ed074dbe3"
 
