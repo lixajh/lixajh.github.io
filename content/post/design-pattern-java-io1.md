@@ -1,3 +1,16 @@
+---
+title: "Java IO中使用最多的最典型的--装饰器模式"
+author: "lix"
+cover: "/images/cover.jpg"
+tags: ["tagA", "tagB"]
+date: 2019-12-16T01:29:39+08:00
+draft: false
+---
+
+Java IO中使用最多的最典型的是 装饰器模式。
+
+<!--more-->
+
 ### Java IO中使用最多的最典型的是 装饰器模式。
 
 #### 好处：
@@ -39,7 +52,7 @@ InputStream有七个直接的具体子类，有四个属于FilterInputStream的�
 
 > 或许跟版本历史有关，其他filter stream都是jdk1.0加入的，这个ObjectInputStream是jdk1.1加入的。同时，在jdk1.1中加入了整个Reader/Writer体系，你会发现Reader/Writer体系中的装饰类都没有继承FilterReader/FilterWriter，而是直接继承Reader/Writer。这就是设计理念的不同。设计者或许认为FilterReader/FilterWriter应该纯粹地作为用户自己设计decorator的基类。
 
-在国外[一本书]([https://books.google.com.hk/books?id=TnU_BAAAQBAJ&pg=PA310&lpg=PA310&dq=ObjectInputStream+decorator&source=bl&ots=V_v7re3yrb&sig=ACfU3U1-CYOGbiMmvAPYknL893MMvXgvvg&hl=zh-CN&sa=X&ved=2ahUKEwjrsKXKrqvmAhWRUN4KHW4pCHMQ6AEwAXoECAoQAQ#v=onepage&q=ObjectInputStream%20decorator&f=false](https://books.google.com.hk/books?id=TnU_BAAAQBAJ&pg=PA310&lpg=PA310&dq=ObjectInputStream+decorator&source=bl&ots=V_v7re3yrb&sig=ACfU3U1-CYOGbiMmvAPYknL893MMvXgvvg&hl=zh-CN&sa=X&ved=2ahUKEwjrsKXKrqvmAhWRUN4KHW4pCHMQ6AEwAXoECAoQAQ#v=onepage&q=ObjectInputStream decorator&f=false))上说明虽然ObjectInputSteam没有继承FilterInputSteam但是他满足装饰器模式的条件(1.它直接或间接继承abstract component2.有一个构造器接收abstract component)，所以它确实是一个装饰器:
+在国外[一本书](https://books.google.com.hk/books?id=TnU_BAAAQBAJ&pg=PA310&lpg=PA310&dq=ObjectInputStream+decorator&source=bl&ots=V_v7re3yrb&sig=ACfU3U1-CYOGbiMmvAPYknL893MMvXgvvg&hl=zh-CN&sa=X&ved=2ahUKEwjrsKXKrqvmAhWRUN4KHW4pCHMQ6AEwAXoECAoQAQ#v=onepage&q=ObjectInputStream%20decorator&f=false](https://books.google.com.hk/books?id=TnU_BAAAQBAJ&pg=PA310&lpg=PA310&dq=ObjectInputStream+decorator&source=bl&ots=V_v7re3yrb&sig=ACfU3U1-CYOGbiMmvAPYknL893MMvXgvvg&hl=zh-CN&sa=X&ved=2ahUKEwjrsKXKrqvmAhWRUN4KHW4pCHMQ6AEwAXoECAoQAQ#v=onepage&q=ObjectInputStream decorator&f=false))上说明虽然ObjectInputSteam没有继承FilterInputSteam但是他满足装饰器模式的条件(1.它直接或间接继承abstract component2.有一个构造器接收abstract component)，所以它确实是一个装饰器:
 
 > ![](https://raw.githubusercontent.com/lixajh/picbed/master/img/20191216001323.png)
 
