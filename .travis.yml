@@ -10,7 +10,8 @@ python:
 # before_install
 # install - install any dependencies required
 install:
-    - go get github.com/gohugoio/hugo
+    - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p;q}}' | xargs wget
+    - sudo dpkg -i hugo*.deb
 
 before_script:
     - rm -rf public 2> /dev/null
