@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Lix&#39;s Blog</title>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Taga</title>
+      <title>tagA</title>
       <link>https://lixajh.github.io/tags/taga/</link>
       <pubDate>Mon, 17 Dec 2018 23:44:54 +0800</pubDate>
       
@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>Tagb</title>
+      <title>tagB</title>
       <link>https://lixajh.github.io/tags/tagb/</link>
       <pubDate>Mon, 17 Dec 2018 23:44:54 +0800</pubDate>
       
