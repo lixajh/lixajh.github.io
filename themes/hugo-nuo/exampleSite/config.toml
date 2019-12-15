@@ -1,13 +1,13 @@
-baseURL = "https://lixajh.github.io/"
-languageCode = "zh"
-title = "Lix's Blog"
+baseURL = "http://localhost:1313"
+languageCode = "en"
+title = "Hugo Blog"
 theme = "hugo-nuo"
 enableRobotsTXT = true
 PygmentsCodeFences = true
 canonifyurls = true
 
 # Disqus Username
-# disqusShortname = "disqus_shortname"
+disqusShortname = "disqus_shortname"
 
 # Google Analytics UA number
 googleAnalytics = "UA-XXXXXXXX-X"
@@ -26,7 +26,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   name = "Works"
   weight = 20
   identifier = "works"
-  url = "https://github.com/lixajh"
+  url = "https://github.com/laozhu"
 
 [[menu.main]]
   name = "Tags"
@@ -36,7 +36,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
 
 # Add your own params here
 [params]
-  author = "lix"
+  author = "Ritchie Zhu"
   bg = "images/grey-prism.svg"
   avatar = "images/avatar.jpg"
   favicon = "images/favicon.ico"
@@ -45,18 +45,18 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   iconWindows = "images/tile-image-windows.png"
   iconApple = "images/touch-icon-apple.png"
   iconAndroid = "images/touch-icon-android.png"
-  seotitle = "Lix's Blog"
+  seotitle = "Hugo Blog (SEO Version)"
   subtitle = "~ Keep It Simple & Stupid ~"
-  description = "Lix's Blog"
+  description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
   paginate = 10
 
   # Choose your social networks
-  email = "lixajh@gmail.com"
-  github = "lixajh"
-  # twitter = "twitter_username"
-  # linkedin = "linkedin_username"
-  # weibo = "weibo_username"
-  # wechat= "images/qrcode.jpg"  # Replace with your wechat qrcode image
+  email = "name@domain.com"
+  github = "github_username"
+  twitter = "twitter_username"
+  linkedin = "linkedin_username"
+  weibo = "weibo_username"
+  wechat= "images/qrcode.jpg"  # Replace with your wechat qrcode image
   # facebook = "facebook_username"
   # google = "googlplus_id_number"
   # instagram = "instagram_username"
@@ -78,7 +78,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   # reddit = "melaozhu"
 
   # Changyan Comments (China Only)
-  changyan = true
+  changyan = false
   changyanId = "cyt3toRiB"
   changyanConf = "prod_0908b1cb9a581501753cce1ed074dbe3"
 
