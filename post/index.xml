@@ -14,10 +14,10 @@
     
     <item>
       <title>Java IO中使用最多的最典型的--装饰器模式</title>
-      <link>https://lixajh.github.io/post/design-pattern-java-io1/</link>
+      <link>https://lixajh.github.io/post/design-pattern-java-io/</link>
       <pubDate>Mon, 16 Dec 2019 01:29:39 +0800</pubDate>
       
-      <guid>https://lixajh.github.io/post/design-pattern-java-io1/</guid>
+      <guid>https://lixajh.github.io/post/design-pattern-java-io/</guid>
       <description>&lt;p&gt;Java IO中使用最多的最典型的是 装饰器模式。&lt;/p&gt;</description>
     </item>
     
