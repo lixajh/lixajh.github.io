@@ -22,18 +22,6 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   identifier = "home"
   url = "/"
 
-[[menu.main]]
-  name = "Works"
-  weight = 20
-  identifier = "works"
-  url = "https://github.com/lixajh"
-
-[[menu.main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-
 # Add your own params here
 [params]
   author = "lix"
@@ -78,17 +66,17 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   # reddit = "melaozhu"
 
   # Changyan Comments (China Only)
-  changyan = true
+  changyan = false
   changyanId = "cyt3toRiB"
   changyanConf = "prod_0908b1cb9a581501753cce1ed074dbe3"
 
   # Google Webmaster
   # https://www.google.com/webmasters/
-  googleSiteVerification = "_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc"
+  # googleSiteVerification = "_moDmnnBNVLBN1rzNxyGUGdPHE20YgbmrtzLIbxaWFc"
 
   # Bing Webmaster
   # https://www.bing.com/toolbox/webmaster/
-  msValidate = "22596E34341DD1D17D6022C44647E587"
+  # msValidate = "22596E34341DD1D17D6022C44647E587"
 
   # Baidu Webmaster (China Only)
   # https://zhanzhang.baidu.com/
