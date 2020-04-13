@@ -26,14 +26,8 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
 [params]
   author = "lix"
   bg = "images/grey-prism.svg"
-  avatar = "images/avatar.jpg"
-  favicon = "images/favicon.ico"
-  favicon16 = "images/favicon-16x16.png"
-  favicon32 = "images/favicon-32x32.png"
-  iconWindows = "images/tile-image-windows.png"
-  iconApple = "images/touch-icon-apple.png"
-  iconAndroid = "images/touch-icon-android.png"
-  seotitle = "Lix's Blog"
+  avatar = "images/avatar.png"
+  
   subtitle = "~ Keep It Simple & Stupid ~"
   description = "Lix's Blog"
   paginate = 10
