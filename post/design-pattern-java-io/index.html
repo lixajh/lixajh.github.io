@@ -11,7 +11,9 @@
   
   <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
   <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  
   <link href="//at.alicdn.com" rel="dns-prefetch">
+  
   <link href="//fonts.googleapis.com" rel="dns-prefetch">
   <link href="//fonts.gstatic.com" rel="dns-prefetch">
   
@@ -34,7 +36,7 @@
     <meta name="twitter:title" content="Java IO中使用最多的最典型的--装饰器模式">
     <meta name="twitter:description" content="Java IO中使用最多的最典型的是 装饰器模式。
 ">
-    <meta name="twitter:image" content="/images/avatar.jpg">
+    <meta name="twitter:image" content="/images/avatar.png">
   
 
   
@@ -43,7 +45,7 @@
   <meta property="og:description" content="Java IO中使用最多的最典型的是 装饰器模式。
 ">
   <meta property="og:url" content="https://lixajh.github.io/post/design-pattern-java-io/">
-  <meta property="og:image" content="/images/avatar.jpg">
+  <meta property="og:image" content="/images/avatar.png">
 
 
 
@@ -68,23 +70,27 @@
 
 
 
+<meta name="theme-color" content="#02b875">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Lix&#39;s Blog">
 <meta name="msapplication-tooltip" content="Lix&#39;s Blog">
-<meta name='msapplication-navbutton-color' content="#5fbf5e">
-<meta name="msapplication-TileColor" content="#5fbf5e">
-<meta name="msapplication-TileImage" content="/images/tile-image-windows.png">
-<link rel="icon" href="https://lixajh.github.io/images/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lixajh.github.io/images/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lixajh.github.io/images/favicon-32x32.png">
-<link rel="icon" sizes="192x192" href="https://lixajh.github.io/images/touch-icon-android.png">
-<link rel="apple-touch-icon" href="https://lixajh.github.io/images/touch-icon-apple.png">
+<meta name='msapplication-navbutton-color' content="#02b875">
+<meta name="msapplication-TileColor" content="#02b875">
+<meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+<link rel="icon" href="https://lixajh.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lixajh.github.io/icons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lixajh.github.io/icons/icon-32x32.png">
+<link rel="icon" sizes="192x192" href="https://lixajh.github.io/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://lixajh.github.io/icons/icon-152x152.png">
+<link rel="manifest" href="https://lixajh.github.io/manifest.json">
 
 
-<link rel="preload" href="https://lixajh.github.io/styles/main.min.css" as="style">
+<link rel="preload" href="https://lixajh.github.io/styles/main-rendered.min.css" as="style">
+
+
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
-<link rel="preload" href="https://lixajh.github.io/images/avatar.jpg" as="image">
+<link rel="preload" href="https://lixajh.github.io/images/avatar.png" as="image">
 <link rel="preload" href="https://lixajh.github.io/images/grey-prism.svg" as="image">
 
 
@@ -93,11 +99,15 @@
     background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
   }
 </style>
-<link rel="stylesheet" href="https://lixajh.github.io/styles/main.min.css">
+<link rel="stylesheet" href="https://lixajh.github.io/styles/main-rendered.min.css">
+
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
 
+
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
 
 
 
@@ -118,14 +128,10 @@
 <![endif]-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"></script>
-
-
 </head>
   <body>
-    
     <div class="suspension">
-      <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
       
         
       
@@ -133,14 +139,15 @@
     
     
   <header class="site-header">
-  <img class="avatar" src="https://lixajh.github.io/images/avatar.jpg" alt="Avatar">
+  <a href="https://lixajh.github.io/"><img class="avatar" src="https://lixajh.github.io/images/avatar.png" alt="Avatar"></a>
   
-  <h2 class="title">Lix&#39;s Blog</h2>
+  <h2 class="title"><a href="https://lixajh.github.io/">Lix&#39;s Blog</a></h2>
   
   <p class="subtitle">~ Keep It Simple &amp; Stupid ~</p>
-  <button class="menu-toggle" type="button">
-    <span class="icon icon-menu"></span>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
   </button>
+
   <nav class="site-menu collapsed">
     <h2 class="offscreen">Main Menu</h2>
     <ul class="menu-list">
@@ -149,19 +156,25 @@
       
       
         <li class="menu-item
-            
-            
-            
-              is-active
-            ">
-            <a href="https://lixajh.github.io/">Home</a>
-          </li>
+          
+          
+           is-active">
+          <a href="https://lixajh.github.io/">Home</a>
+        </li>
       
     </ul>
   </nav>
   <nav class="social-menu collapsed">
     <h2 class="offscreen">Social Networks</h2>
-    <ul class="social-list"><li class="social-item"><a href="mailto:lixajh@gmail.com" title="Email"><span class="icon icon-email"></span></a></li><li class="social-item"><a href="//github.com/lixajh" title="GitHub"><span class="icon icon-github"></span></a></li></ul>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:lixajh@gmail.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/lixajh" rel="me" title="GitHub" aria-label="GitHub">
+	    <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li></ul>
   </nav>
 </header>
 
@@ -235,15 +248,16 @@
     
   </section>
   
-
-
 <footer class="site-footer">
   <p>© 2017-2020 Lix&#39;s Blog</p>
-  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
   
-    <p><a href="http://beian.miit.gov.cn" title="Check ICP info" target="_blank">粤ICP备19161674号</a></p>
+    <p><a href="http://beian.miit.gov.cn" title="Check ICP info" target="_blank" rel="noopener">粤ICP备19161674号</a></p>
   
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
 
 
 
@@ -278,6 +292,14 @@
 
 
 <script src="https://lixajh.github.io/scripts/index.min.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('\/service-worker.js').then(function() {
+      console.log('[ServiceWorker] Registered');
+    });
+  }
+</script>
 
 
 
