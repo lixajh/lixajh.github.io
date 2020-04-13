@@ -101,11 +101,11 @@ a {
 
 .site-footer {
   display: block;
-    padding: 2rem 1rem;
-    text-align: center;
-    color: $text;
-    font-family: $family-monospace;
-    font-size: $size-7;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: $text;
+  font-family: $family-monospace;
+  font-size: $size-7;
 
   @media screen and (max-width: 800px) {
     display: block;
