@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify -b "https://xiali.press/"
 
       - name: Copy
-        run: cp ./public/ ./hugo/
+        run: cp -r ./public/ ./hugo/
 
       - name: Deploy
         uses: appleboy/scp-action@master
