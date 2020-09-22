@@ -1,5 +1,5 @@
 ---
-title: "Java IO中使用最多的最典型的--装饰器模式 ceshi"
+title: "Java IO中使用最多的最典型的--装饰器模式"
 author: "lix"
 tags: ["tagA", "tagB"]
 date: 2019-12-16T01:29:39+08:00
