@@ -23,8 +23,10 @@ jobs:
       - name: Build
         run: hugo --minify -b "https://xiali.press/"
 
-      - name: Deploy
+      - name: Copy
         run: cp ./public/ ./hugo/
+
+      - name: Deploy
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
