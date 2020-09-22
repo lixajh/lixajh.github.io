@@ -22,9 +22,9 @@ jobs:
 
       - name: Build
         run: hugo --minify -b "https://xiali.press/"
-             mv ./public/ ./hugo/
 
       - name: Deploy
+        run: cp ./public/ ./hugo/
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
