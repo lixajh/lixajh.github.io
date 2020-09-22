@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify -b "https://xiali.press/"
 
       - name: Deploy
-        uses: appleboy/scp-action@v0.0.1
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
