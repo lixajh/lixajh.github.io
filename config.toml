@@ -1,4 +1,4 @@
-baseURL = "https://lixajh.github.io/"
+baseURL = "https://blog.xiali.press/"
 languageCode = "zh"
 title = "Lix's Blog"
 theme = "hugo-nuo"
