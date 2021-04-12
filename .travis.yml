@@ -34,6 +34,6 @@ deploy:
   verbose: true
   keep-history: true
   local-dir: public
-  target_branch: master  # branch contains blog content
+  target_branch: site-master  # branch contains blog content
   on:
-    branch: code  # branch contains Hugo generator code
+    branch: site-code  # branch contains Hugo generator code
